@@ -12,29 +12,51 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-blue-900 ">
+    <header className="bg-blue-900">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Left Section: Language and Address */}
         <div className="flex items-center space-x-4 text-white">
           <span>English</span>
           <span className="text-gray-400">|</span>
           <span className="flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 11c2.21 0 4-1.79 4-4S14.21 3 12 3 8 4.79 8 7s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 mr-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M12 11c2.21 0 4-1.79 4-4S14.21 3 12 3 8 4.79 8 7s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"
+              />
             </svg>
             160 Broadway 15th floor, New York
           </span>
           <span className="text-gray-400">|</span>
           <span className="flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5h18M9 3v2m6-2v2m2 4H7l-2 9h14l-2-9zM2 9h20" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 mr-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M3 5h18M9 3v2m6-2v2m2 4H7l-2 9h14l-2-9zM2 9h20"
+              />
             </svg>
             333 456 8888
           </span>
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex space-x-4 max-sm:hidden   text-white">
+        <div className="flex space-x-4 max-sm:hidden text-white">
           <FaFacebookF className="hover:text-gray-400 cursor-pointer" />
           <FaLinkedinIn className="hover:text-gray-400 cursor-pointer" />
           <FaTwitter className="hover:text-gray-400 cursor-pointer" />
@@ -55,8 +77,31 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* Navigation Links */}
-          <ul className={`md:flex space-x-8 text-gray-800 ${isOpen ? 'block' : 'hidden'} md:block`}>
+          {/* Sidebar */}
+          <div
+            className={`fixed top-0 z-[100] left-0 h-full bg-white shadow-lg transition-transform transform ${
+              isOpen ? 'translate-x-0' : '-translate-x-full'
+            } w-64 md:hidden`}
+          >
+            <div className="flex justify-between items-center p-4">
+              <Image src={Logo} alt="Finatex Logo" width={120} height={40} />
+              <button onClick={toggleMenu} className="focus:outline-none">
+                <FaTimes size={24} />
+              </button>
+            </div>
+            <ul className="space-y-8 text-gray-800 p-4">
+              <li className="hover:text-blue-500 cursor-pointer">Home</li>
+              <li className="hover:text-blue-500 cursor-pointer">About</li>
+              <li className="hover:text-blue-500 cursor-pointer">Services</li>
+              <li className="hover:text-blue-500 cursor-pointer">Case Studies</li>
+              <li className="hover:text-blue-500 cursor-pointer">Pages</li>
+              <li className="hover:text-blue-500 cursor-pointer">Blog</li>
+              <li className="hover:text-blue-500 cursor-pointer">Contact</li>
+            </ul>
+          </div>
+
+          {/* Navigation Links for Larger Screens */}
+          <ul className="hidden md:flex space-x-8 text-gray-800">
             <li className="hover:text-blue-500 cursor-pointer">Home</li>
             <li className="hover:text-blue-500 cursor-pointer">About</li>
             <li className="hover:text-blue-500 cursor-pointer">Services</li>
