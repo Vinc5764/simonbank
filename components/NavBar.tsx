@@ -34,13 +34,13 @@ const Navbar = () => {
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex space-x-4 text-white">
+        {/* <div className="flex space-x-4 text-white">
           <FaFacebookF className="hover:text-gray-400 cursor-pointer" />
           <FaLinkedinIn className="hover:text-gray-400 cursor-pointer" />
           <FaTwitter className="hover:text-gray-400 cursor-pointer" />
           <FaInstagram className="hover:text-gray-400 cursor-pointer" />
           <FaYoutube className="hover:text-gray-400 cursor-pointer" />
-        </div>
+        </div> */}
       </div>
 
       <nav className="bg-white shadow-md">
