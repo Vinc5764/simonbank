@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube } from 're
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-8">
+    <footer className="bg-blue-900 px-4 text-white py-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo and Description */}
         <div>
@@ -60,7 +60,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Your email address"
-              className="p-2 rounded-l-lg border-none focus:ring-0 text-gray-900"
+              className="p-2 rounded-l-lg border-none w-2/3 focus:ring-0 text-gray-900"
             />
             <button className="bg-blue-600 p-2 rounded-r-lg text-white hover:bg-blue-700">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const CallToAction = () => {
   return (
-    <section className="relative bg-cover bg-center py-16 [background-image:url('../public/form.png')]">
+    <section className="relative bg-cover bg-center py-16 px-4 [background-image:url('../public/form.png')]">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="text-white max-w-lg mb-8 md:mb-0">
           <h1 className="text-4xl font-bold leading-tight mb-4">
@@ -19,12 +19,13 @@ const CallToAction = () => {
               <input
                 type="text"
                 placeholder="Name"
-                className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="flex-1 px-4 w-1/2 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="flex-1 px-4 py-2 border rounded-lg w-1/2
+                 focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
             </div>
             <select className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">

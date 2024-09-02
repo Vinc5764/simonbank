@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-blue-900">
+    <header className="bg-blue-900 ">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Left Section: Language and Address */}
         <div className="flex items-center space-x-4 text-white">
@@ -34,13 +34,13 @@ const Navbar = () => {
         </div>
 
         {/* Social Media Icons */}
-        {/* <div className="flex space-x-4 text-white">
+        <div className="flex space-x-4 max-sm:hidden   text-white">
           <FaFacebookF className="hover:text-gray-400 cursor-pointer" />
           <FaLinkedinIn className="hover:text-gray-400 cursor-pointer" />
           <FaTwitter className="hover:text-gray-400 cursor-pointer" />
           <FaInstagram className="hover:text-gray-400 cursor-pointer" />
           <FaYoutube className="hover:text-gray-400 cursor-pointer" />
-        </div> */}
+        </div>
       </div>
 
       <nav className="bg-white shadow-md">

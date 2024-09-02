@@ -6,7 +6,7 @@ import UserImage from '@/public/subslider2-2.png'; // Update with the actual pat
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-[#faf7f2] py-16">
+    <section className="relative px-4 bg-[#faf7f2] py-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Text Section */}
         <div className="md:w-1/2 mb-8 md:mb-0">
@@ -16,13 +16,13 @@ const HeroSection = () => {
           <p className="text-gray-600 mb-6">
             Get personalized financial advice to help reach your financial goals.
           </p>
-          <div className="flex items-center">
+          <div className="flex  items-center">
             <input
               type="email"
               placeholder="Email"
               className="px-4 py-2 w-full max-w-xs rounded-l-md border border-gray-300 focus:outline-none"
             />
-            <button className="px-6 py-2 bg-black text-white rounded-r-md hover:bg-gray-800 focus:outline-none">
+            <button className="px-6 sm:py-2  lg:py-2 bg-black text-white rounded-r-md hover:bg-gray-800 focus:outline-none">
               Get Started
             </button>
           </div>
